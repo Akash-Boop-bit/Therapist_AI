@@ -1,0 +1,102 @@
+/* TherapistResponse.css */
+
+.therapist-response-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  padding: 20px;
+}
+
+.therapist-response-card li {
+  list-style: none;
+  padding: 1rem 0 0 0;
+}
+
+.therapist-response-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  padding: 60px 30px 40px;
+  text-align: left;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.therapist-avatar {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.therapist-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+.therapist-message-list {
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.therapist-message-item {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.therapist-message-item::before {
+  content: "•";
+  color: #6c63ff;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .therapist-response-card {
+    padding: 80px 20px 40px;
+  }
+
+  .therapist-message-item {
+    font-size: 1rem;
+  }
+}
+
+/* LoadingSpinner.css */
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Full screen height */
+  height: 100vh;
+}
+
+.loading-spinner {
+  width: 80px;
+  height: 80px;
+  border: 12px solid #f3f3f3; /* Light gray */
+  border-top: 12px solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

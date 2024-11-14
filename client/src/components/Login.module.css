@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  align-items: center;
+}
+.main h1 {
+  font-size: 4rem;
+  margin-top: 6rem;
+}
+
+.main input {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+}
+
+.main button {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}

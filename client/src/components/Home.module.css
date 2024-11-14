@@ -1,0 +1,169 @@
+/* From Uiverse.io by mrhyddenn */
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+
+
+.shadow__btn {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+.main {
+  width: 100vw;
+  padding: 11rem 0;
+  min-height: 60vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.main1 {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main1 h1 {
+  padding: 4rem 2rem 0;
+  font-size: 2.5rem;
+}
+.main1 p {
+  padding: 2rem 7rem;
+  font-weight: 700;
+}
+.btndiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.main2 {
+  width: 50%;
+  height: 55vh;
+  background-image: url("./images/Homeai.jpg");
+  background-size: cover;
+}
+
+.section2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.section2 h1 {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+.section2 span {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 30%);
+  font-weight: 600;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 60vh;
+  padding: 5rem 0;
+}
+.section31 {
+  width: 40%;
+  padding: 3rem;
+}
+.section31 div {
+  padding: 2rem;
+}
+.section32 {
+  margin-top: 4rem;
+  width: 40%;
+  height: 70%;
+  background-image: url("./images/ai-therapist.webp");
+  background-size: cover;
+}
+
+.footer {
+  border: 1px solid black;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer div {
+  display: flex;
+  width: 20vw;
+  justify-content: space-around;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .main1 {
+    width: 100%;
+  }
+  .main1 h1 {
+    padding: 3rem 0 0 0;
+    text-align: center;
+  }
+  .main1 p {
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+  }
+  .btndiv {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+    width: 80%;
+  }
+  .main2 {
+    width: 100%;
+    height: 30vh;
+  }
+  .section2 span {
+    padding: 1rem;
+  }
+  .section3 {
+    flex-direction: column;
+    padding: 2rem 0;
+    height: 80vh;
+  }
+  .section31 {
+    width: 100%;
+    padding: 0;
+  }
+  .section32 {
+    width: 100%;
+    height: 80%;
+  }
+
+  .footer div {
+    width: 50vw;
+  }
+}
